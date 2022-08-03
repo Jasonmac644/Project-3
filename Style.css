@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0,0%,100%,0.75);
+    --verylightgray: hsla(0,0%,95%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.box-container{
+    background-color: var(--verylightgray);
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-column, .header1, .main-body{
+    background-color: var(--Brightorange);
+
+}
+.second-column, .header2, .main-body2{
+    background-color: var(--Darkcyan);
+}
+
+.third-column, .header3,.main-body3{
+    background-color: var(--Verydarkcyan);
+}
+
+.header1, .header2, .header3{
+    margin-left: 10%;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.first-column, .second-column, .third-column{
+    height: 50vh;
+    width: 35vh;
+}
+img{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.main-body, .main-body2, .main-body3{
+    margin-left: 5%;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color: var(--Transparentwhite);
+    font-size: 15px;
+    margin: 10%;
+    width: 70%;
+    line-height: 150%;
+
+}
+.first-column{
+    border-radius:15px 0 0 15px;
+}
+.third-column{
+    border-radius: 0 15px 15px 0;
+}
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    cursor: pointer;
+    background-color: var(--verylightgray);
+    color: none;
+    border: none;
+    margin-left: 10%;
+    margin-top: 12%;
+    padding: 6%;
+    border-radius: 25px;
+    width: 50%;
+}
+.btn1{
+    color: var(--Brightorange);
+}
+.btn2{
+    color: var(--Darkcyan);
+}
+.btn3{
+    color: var(--Verydarkcyan);
+}
+.btn1:hover{
+    background-color: var(--Brightorange);
+    color: white;
+    -webkit-transition-duration: 0.3s;
+}
+.btn2:hover{
+    background-color: var(--Darkcyan);
+    color: white;
+    -webkit-transition-duration: 0.3s;
+}
+.btn3:hover{
+    background-color: var(--Verydarkcyan);
+    color: white;
+    -webkit-transition-duration: 0.3s;
+}
